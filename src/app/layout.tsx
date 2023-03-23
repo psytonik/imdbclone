@@ -1,4 +1,4 @@
-import { Header, MenuItem } from "@/components";
+import { Header } from "@/components";
 import React from "react";
 import './global.css';
 
@@ -13,7 +13,6 @@ export default function RootLayout({children}: { children: React.ReactNode }) {
     <html lang="en">
       <body>
         <Header/>
-        <MenuItem/>
         {children}
       </body>
     </html>
