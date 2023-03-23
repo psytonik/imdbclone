@@ -1,9 +1,10 @@
 import React from 'react';
 
+
 const MyComponent = () => {
 	return (
-		<div>
-          hello
+		<div className="text-red-600 text-3xl font-bold">
+          Hello
 		</div>
 	);
 };
