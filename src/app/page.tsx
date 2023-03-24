@@ -9,7 +9,8 @@ const Home = async({searchParams}:any) => {
 		}?api_key=${API_KEY}&language=en-US&page=1`,{ next: { revalidate: 3600 }});
 
 	if(!res.ok){
-		// throw new Error()
+		console.log(res, 'response')
+		throw new Error()
 	}
 	const data = await res.json();
 	return (
