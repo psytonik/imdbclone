@@ -8,7 +8,7 @@ const NavbarItem = ({title, param}:any) => {
 	const searchParams = useSearchParams();
 	const genre = searchParams.get('genre');
 	return (
-		<div>
+		<>
 			<Link
 				className={`m-4 hover:text-amber-600 font-semibold p-2 
 				${genre && genre === param && 'underline ' +
@@ -16,7 +16,7 @@ const NavbarItem = ({title, param}:any) => {
 				href={`/?genre=${param}`}>
 				{title}
 			</Link>
-		</div>
+		</>
 	);
 };
 
