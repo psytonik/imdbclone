@@ -1,3 +1,4 @@
+import DarkModeSwitch from './DarkModeSwitch';
 import Header from './Header';
 import MenuItem from './MenuItem';
 
@@ -5,5 +6,6 @@ import MenuItem from './MenuItem';
 
 export {
 	Header,
-	MenuItem
+	MenuItem,
+	DarkModeSwitch
 }
