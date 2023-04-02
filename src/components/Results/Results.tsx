@@ -1,11 +1,13 @@
 import React from 'react';
+import {Card} from "@/components";
 
-const Results = ({results}:any) => {
+const Results = ({results}: { results:ResponseFromServer[] }) => {
 	return (
-		<div>
-			{results && results.map((r: any)=>(<div key={r.id}>
-				{r.original_title}
-			</div>))}
+		<div className="sm:grid sm:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 2xl:grid-cols-5 max-w-6xl mx-auto py-4">
+			{results && results.map((result:any)=>{
+
+				return (<Card key={result.id} componentData={result}/>)
+			})}
 		</div>
 	);
 };

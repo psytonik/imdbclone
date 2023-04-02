@@ -4,7 +4,7 @@ import MenuItem from './MenuItem';
 import Navbar from './Navbar';
 import NavbarItem from './NavbarItem';
 import Results from './Results';
-
+import Card from './Card';
 
 
 export {
@@ -13,5 +13,6 @@ export {
 	DarkModeSwitch,
 	Navbar,
 	NavbarItem,
-	Results
+	Results,
+	Card
 }
