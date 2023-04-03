@@ -4,6 +4,7 @@ import {Results} from "@/components";
 
 const SearchResults = async ({params}:any) => {
 	const {searchTerm} = params;
+
 	const movie = await getMovieBySearchQuery(searchTerm);
 	const {results} = await movie;
 
