@@ -5,7 +5,7 @@ import Navbar from './Navbar';
 import NavbarItem from './NavbarItem';
 import Results from './Results';
 import Card from './Card';
-
+import SearchBox from './SearchBox';
 
 export {
 	Header,
@@ -14,5 +14,6 @@ export {
 	Navbar,
 	NavbarItem,
 	Results,
-	Card
+	Card,
+	SearchBox
 }

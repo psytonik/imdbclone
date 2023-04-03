@@ -1,4 +1,4 @@
-import { Header, Navbar } from "@/components";
+import {Header, Navbar, SearchBox} from "@/components";
 import React, { ReactNode } from "react";
 import './global.css';
 import Providers from "./Providers";
@@ -16,6 +16,7 @@ export default function RootLayout({children}: { children: ReactNode }) {
         <Providers >
             <Header/>
             <Navbar/>
+            <SearchBox/>
             {children}
         </Providers>
       </body>
