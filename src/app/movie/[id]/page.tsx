@@ -1,11 +1,10 @@
 import React from 'react';
-import {Params} from "next/dist/shared/lib/router/utils/route-matcher";
 import {getMovieById} from "@/utils/GetMovies";
 import Image from "next/image";
 
 
 
-const MoviePage = async ({params}:Params) => {
+const MoviePage = async ({params}:any) => {
 	const movieId = params.id;
 	const movie = await getMovieById(movieId);
 

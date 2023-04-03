@@ -1,6 +1,6 @@
 const API_KEY = process.env.API_KEY;
 
-export const getMovieById = async (movieId:number):Promise<ResponseFromServer> => {
+export const getMovieById = async (movieId:number) => {
 	const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`);
 	if(!response.ok){
 		console.log(response, 'response')
@@ -9,7 +9,7 @@ export const getMovieById = async (movieId:number):Promise<ResponseFromServer> =
 	return await response.json();
 }
 
-export const getMoviesByGenre = async (genre:string):Promise<ResponseFromServer[]> => {
+export const getMoviesByGenre = async (genre:string) => {
 	const res = await fetch(`https://api.themoviedb.org/3/${
 			genre === 'fetchTopRated' ? '/movie/top_rated' :'trending/all/week'}?api_key=${API_KEY}&language=en-US`,
 		{ next: { revalidate: 3600 }}
