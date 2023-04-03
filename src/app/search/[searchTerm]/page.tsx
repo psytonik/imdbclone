@@ -2,12 +2,7 @@ import React from 'react';
 import {getMovieBySearchQuery} from "@/utils/GetMovies";
 import {Results} from "@/components";
 
-type PageProps = {
-	params: {
-		searchTerm: string
-	}
-};
-const SearchResults = async ({params}:PageProps) => {
+const SearchResults = async ({params}:any) => {
 	const {searchTerm} = params;
 	const movie = await getMovieBySearchQuery(searchTerm);
 	const {results} = await movie;
