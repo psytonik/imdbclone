@@ -1,6 +1,6 @@
 const API_KEY = process.env.API_KEY;
 
-export const getMovieById = async (movieId:number) => {
+export const getMovieById = async (movieId:number):Promise<ResponseFromServer> => {
 	const response = await fetch(`https://api.themoviedb.org/3/movie/${movieId}?api_key=${API_KEY}`);
 	if(!response.ok){
 		console.log(response, 'response')
