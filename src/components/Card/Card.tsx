@@ -14,10 +14,10 @@ const Card = ({componentData}:{componentData:ResponseFromServer}) => {
 					alt={componentData.title || componentData.original_title || 'Not Available'}
 					width={500}
 					height={300}
-					className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200"
+					className="sm:rounded-t-lg group-hover:opacity-80 transition-opacity duration-200 object-cover h-32"
 					placeholder="blur"
 					blurDataURL="/spinner.svg"
-					style={{width:'100%',height:'auto'}}
+					style={{width:'100%'}}
 				></Image>
 				<div className="p-2">
 					<p className="line-clamp-2 text-md">{componentData.overview}</p>
